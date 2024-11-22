@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100ph;
+    background-color: rgb(176, 112, 235);
+}
+.container , #resumePage {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 35px;
+}
+button{
+    padding: 0.05em 1.8em;
+    margin-top: 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 0.9em;
+}
+legend{
+    display: block;
+    margin-bottom: 0.7em;
+    font-weight: bold;
+    color: solid black;
+    font-size: 1.1em;
+}
+textarea{
+    height: 130px;
+    border-radius: 10px;
+}
+input[type = "text"] , input[type = "email"] , textarea{
+    width: 100%;
+    padding: 0.85em;
+    margin-top: 0.5em;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+.hidden{
+    display: none;
+}
+#Resumepage img{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 5px solid steelblue;
+}
+#Resumepage h1{
+    text-align: center;
+    color: black;
+}
+#Resumepage h2{
+    color: steelblue;
+    text-align: left;
+}
+#resumeContent h1 {
+    text-align: center;
+    color: black;
+}
+#resumeContent h2{
+    color: steelblue;
+    text-align: left;
+}
+#resumeDetails, #resumeSpecialization, #resumeSkills {
+    visibility: visible !important;
+    display: block !important;
+    opacity: 1 !important;
+}
+

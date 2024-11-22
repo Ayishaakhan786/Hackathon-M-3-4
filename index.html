@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title className>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>DYNAMIC RESUME BUILDER</h1>
+        <form id="resumeForm">
+            <h1>Personal Information</h1>
+            <fieldset>
+                <legend>First Name</legend>
+                <input type="text" id="firstname" placeholder="First name" required><br><br>
+                <legend>Last Name</legend>
+                <input type="text" id="lastname" placeholder="Last name" required><br><br>
+                <legend>Age</legend>
+                <input type="number" id="age" placeholder="Age" required><br><br>
+                <legend>Address</legend>
+                <input type="text" id="address" placeholder="Address" required><br><br>
+                <legend>Phone Number</legend>
+                <input type="tel" id="phonenumber" placeholder="Phone" required><br><br>
+                <legend>Email</legend>
+                <input type="email" id="email" placeholder="Email" required><br><br>
+            </fieldset>
+            <h1>Education</h1>
+            <fieldset>
+                <legend>Degree</legend>
+                <input type="text" id="degree" placeholder="Degree" required><br><br>
+                <legend>Passing Year</legend>
+                <input type="number" id="passingyear" placeholder="Year" required><br><br>
+                <legend>Institute Name</legend>
+                <input type="text" id="institutename" placeholder="Institute name" required><br><br>
+                <legend>Specialization</legend>
+                <input type="text" id="specialization" placeholder="Specialization" required><br><br>
+            </fieldset>
+            <h1>Work Experience</h1>
+            <fieldset>
+                <legend>Details</legend>
+                <textarea id="Details" placeholder="Work experience details" required></textarea><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Skills</legend>
+                <textarea id="skills" placeholder="Skills" required></textarea><br><br>
+                <legend>Upload Photo</legend>
+                <input type="file" id="photo" required>
+            </fieldset>
+            <button type="submit">Generate Your Resume</button>
+        </form>
+    </div>
+    <div id="Resumepage" class="resume-page hidden">
+        <div id="resumeContent" class="resume-content">
+            <img id="resumePhoto" class="resume-photo" src="" alt="Photo">
+            <h1 id="resumefirstname"></h1>
+            <h1 id="resumeLastname"></h1>
+            <p id="resumeAge"></p>
+            <p id="resumeAddress"></p>
+            <p id="resumeemail"></p>
+            <p id="resumephonenumber"></p>
+            <h2>Education</h2>
+            <p id="resumeEducation"></p>
+            <p id="resumeYear"></p>
+            <p id="resumeInstitute"></p>
+            <h2>Specialization</h2>
+            <p id="resumeSpecialization"></p>
+            <h2>Work Experience</h2>
+            <p id="resumeDetails"></p>
+            <h2>Skills</h2>
+            <p id="resumeSkills"></p>
+        </div>
+        <button id="backButton" onclick="window.location.href='index.html'">Back</button>
+        <button id="shareLinkButton">Share</button>
+        <button id="DownloadResume">Download PDF</button>
+        <button id="editButton">Edit</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
